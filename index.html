@@ -757,6 +757,20 @@
 .cid-u48U5GAiOH .mbr-text {
   text-align: center;
 }
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 </style>
 <section class="video04 cid-u48U5GAiOH" id="video-6-u48U5GAiOH">
   <div class="container">
@@ -768,9 +782,12 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 video-block">
         <div class="video-wrapper">
-          <iframe class="mbr-embedded-video"
-            src="https://www.youtube.com/embed/OCSRRLXgszE?autoplay&#x3D;1&amp;loop&#x3D;1&amp;playlist&#x3D;OCSRRLXgszE&amp;t&#x3D;20&amp;mute&#x3D;1&amp;playsinline&#x3D;1&amp;controls&#x3D;0&amp;showinfo&#x3D;0&amp;autohide&#x3D;1&amp;allowfullscreen&#x3D;true&amp;mode&#x3D;transparent"
-            width="1280" height="720" frameborder="0" allowfullscreen></iframe>
+          <div class="video-container">
+            <video muted autoplay loop>
+                <source src="./assets/video/pexels-wowi-allinsky-10232729 (720p).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
         </div>
       </div>
     </div>
