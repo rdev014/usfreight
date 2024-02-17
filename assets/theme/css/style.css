@@ -2,6 +2,9 @@
 section {
   background-color: #ffffff;
 }
+html{
+  scrollbar-width: 2px solid blue;
+}
 
 body {
   font-style: normal;
